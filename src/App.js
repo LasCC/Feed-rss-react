@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './Semantic-UI/semantic.min.css'
+import MacOS from './components/MacOS.jsx'
+import Navbar from './components/Navbar.jsx'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Windows from './components/Windows.jsx'
+import Formation from './components/Formation.jsx'
+import News from './components/News.jsx'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <h2 className="ui center aligned icon header">
+        <i className="circular rss icon animated bounceIn"></i>
+        <span className="focus-in-contract-bck">RSS Feeder - Created with React </span>
+      </h2>
+      <Navbar />
+      <Switch>
+        <div className="container">
+          <Route exact path='/' component={MacOS} />
+          <Route path='/windows' component={Windows} />
+          <Route path='/formation' component={Formation} />
+          <Route path='/news' component={News} />
+        </div>
+      </Switch>
+    </Router>
   );
 }
 
 export default App;
+
+
