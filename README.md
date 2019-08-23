@@ -7,5 +7,5 @@ Or if you are lazy like me you can visit this project here https://feed-rss-reac
 # Some pictures of the project 
 ![alt text](https://i.imgur.com/Zr2ttYd.png "macOS section")
 ![alt text](https://i.imgur.com/y0zdmad.png "windows section")
-![alt text](https://i.imgur.com/21bmdFr.png "formation section")
-![alt text](https://i.imgur.com/tcJgpLj.png "news hacking section")
+![alt text](https://i.imgur.com/JS52TOq.png "formation section")
+![alt text](https://i.imgur.com/FJ4PYgj.png "news hacking section")
