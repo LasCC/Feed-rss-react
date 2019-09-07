@@ -10,7 +10,7 @@ export default class Ebook extends React.Component {
     componentDidMount() {
         axios({
             method: 'get',
-            url: `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww2.yggtorrent.ch%2Frss%3Faction%3Dgenerate%26type%3Dcat%26id%3D2140%26passkey%3DmLm89bjTh7BClIjiALwYuE0RvKVsCGNP&api_key=cpe1hekkfknhpeqov1hvcojojd9csg01yqybwsaw&count=100`,
+            url: `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww2.yggtorrent.ch%2Frss%3Faction%3Dgenerate%26type%3Dsubcat%26id%3D2154%26passkey%3DmLm89bjTh7BClIjiALwYuE0RvKVsCGNP&api_key=cpe1hekkfknhpeqov1hvcojojd9csg01yqybwsaw&count=100`,
             headers: { 'content-type': 'application/x-www-form-urlencoded' },
         })
             .then(res => {
@@ -27,13 +27,13 @@ export default class Ebook extends React.Component {
                     <div className="column">
                         <div className="ui card ui raised piled segments">
                             <div className="content">
-                                <div className="header">{OTHER.title}</div>
+                                <h3 className="">{OTHER.title}</h3>
                                 <div className="meta">
                                     <div className="ui brown ribbon label">
                                         <a className="color white"><i className="book icon"></i> {OTHER.categories[0]}</a>
                                     </div>
                                 </div>
-                                <div className="description" dangerouslySetInnerHTML={{ __html: OTHER.content }} />
+                                <span className="description darkmode-ignore" dangerouslySetInnerHTML={{ __html: OTHER.content }} />
                             </div>
                             <div className="extra content">
                                 <div className="ui two buttons">

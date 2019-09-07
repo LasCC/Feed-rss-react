@@ -15,7 +15,7 @@ import Ebook from './components/Ebooks';
 function App() {
   return (
     <Router>
-      <h2 className="ui center aligned icon header">
+      <h2 className="ui center aligned icon header darkmode-ignore">
         <i className="circular rss icon animated bounceIn"></i>
         <span className="focus-in-contract-bck">RSS Feeder - Created with React </span>
       </h2>
